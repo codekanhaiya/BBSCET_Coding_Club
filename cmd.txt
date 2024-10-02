@@ -1,0 +1,273 @@
+PS C:\Users\kanha\OneDrive\Desktop\codingClub> npx create-react-app client   
+
+Creating a new React app in C:\Users\kanha\OneDrive\Desktop\codingClub\client.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1481 packages in 2m
+
+262 packages are looking for funding
+  run `npm fund` for details
+Git repo not initialized Error: Command failed: git --version
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at tryGitInit (C:\Users\kanha\OneDrive\Desktop\codingClub\client\node_modules\react-scripts\scripts\init.js:46:5)
+    at module.exports (C:\Users\kanha\OneDrive\Desktop\codingClub\client\node_modules\react-scripts\scripts\init.js:276:7)
+    at [eval]:3:14
+    at runScriptInThisContext (node:internal/vm:209:10)
+    at node:internal/process/execution:118:14
+    at [eval]-wrapper:6:24 {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 16972,
+  stdout: null,
+  stderr: null
+}
+
+Installing template dependencies using npm...
+
+added 63 packages, and changed 1 package in 10s
+
+262 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1544 packages in 11s
+
+262 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created client at C:\Users\kanha\OneDrive\Desktop\codingClub\client
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd client
+  npm start
+
+Happy hacking!
+
+
+
+
+
+
+PS C:\Users\kanha\OneDrive\Desktop\codingClub> mkdir server
+
+
+    Directory: C:\Users\kanha\OneDrive\Desktop\codingClub
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-09-2024  05:59 PM                server
+
+
+PS C:\Users\kanha\OneDrive\Desktop\codingClub> cd server
+PS C:\Users\kanha\OneDrive\Desktop\codingClub\server> npm init -y       
+Wrote to C:\Users\kanha\OneDrive\Desktop\codingClub\server\package.json:
+
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+PS C:\Users\kanha\OneDrive\Desktop\codingClub\server> npm i express jsonwebtoken bcrypt body-parser dotenv mongose joi cors
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+npm warn deprecated gauge@3.0.2: This package is no longer supported.
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     'C:\\Users\\kanha\\OneDrive\\Desktop\\codingClub\\server\\node_modules',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\@mapbox'] {  
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\Users\\kanha\\OneDrive\\Desktop\\codingClub\\server\\node_modules\\@mapbox'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]
+npm error code 1
+npm error path C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c node-pre-gyp install --fallback-to-build
+npm error Failed to execute 'C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js configure --fallback-to-build --module=C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node --module_name=bcrypt_lib --module_path=C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt\lib\binding\napi-v3 --napi_version=9 --node_abi_napi=napi --napi_build_version=3 --node_napi_label=napi-v3' (1)
+npm error node-pre-gyp info it worked if it ends with ok
+npm error node-pre-gyp info using node-pre-gyp@1.0.11
+npm error node-pre-gyp info using node@20.16.0 | win32 | x64
+npm error node-pre-gyp info check checked for "C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node" (not found)
+npm error node-pre-gyp http GET https://github.com/kelektiv/node.bcrypt.js/releases/download/v5.1.1/bcrypt_lib-v5.1.1-napi-v3-win32-x64-unknown.tar.gz
+npm error node-pre-gyp ERR! install request to https://objects.githubusercontent.com/github-production-release-asset-2e65be/611333/97a8321c-5d46-45ec-b4ee-95fc5d5053fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240927T123627Z&X-Amz-Expires=300&X-Amz-Signature=4349f503ef9abf893d3ee36467ff0b369d4d476e4476fde1597d649d61ced201&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dbcrypt_lib-v5.1.1-napi-v3-win32-x64-unknown.tar.gz&response-content-type=application%2Foctet-stream failed, reason: getaddrinfo ENOTFOUND objects.githubusercontent.com
+npm error node-pre-gyp WARN Pre-built binaries not installable for bcrypt@5.1.1 and node@20.16.0 (node-v115 ABI, unknown) (falling back to source compile with node-gyp)
+npm error node-pre-gyp WARN Hit error request to https://objects.githubusercontent.com/github-production-release-asset-2e65be/611333/97a8321c-5d46-45ec-b4ee-95fc5d5053fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240927T123627Z&X-Amz-Expires=300&X-Amz-Signature=4349f503ef9abf893d3ee36467ff0b369d4d476e4476fde1597d649d61ced201&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dbcrypt_lib-v5.1.1-napi-v3-win32-x64-unknown.tar.gz&response-content-type=application%2Foctet-stream failed, reason: getaddrinfo ENOTFOUND objects.githubusercontent.com
+npm error gyp info it worked if it ends with ok
+npm error gyp info using node-gyp@10.1.0
+npm error gyp info using node@20.16.0 | win32 | x64
+npm error gyp info ok
+npm error gyp info it worked if it ends with ok
+npm error gyp info using node-gyp@10.1.0
+npm error gyp info using node@20.16.0 | win32 | x64
+npm error gyp info find Python using Python version 3.11.4 found at "C:\Users\kanha\AppData\Local\Programs\Python\Python311\python.exe"
+npm error gyp http GET https://nodejs.org/download/release/v20.16.0/node-v20.16.0-headers.tar.gz
+npm error gyp http 200 https://nodejs.org/download/release/v20.16.0/node-v20.16.0-headers.tar.gz
+npm error gyp http GET https://nodejs.org/download/release/v20.16.0/SHASUMS256.txt
+npm error gyp http GET https://nodejs.org/download/release/v20.16.0/win-x64/node.lib
+npm error gyp http 200 https://nodejs.org/download/release/v20.16.0/SHASUMS256.txt
+npm error gyp http 200 https://nodejs.org/download/release/v20.16.0/win-x64/node.lib
+npm error gyp ERR! find VS
+npm error gyp ERR! find VS msvs_version not set from command line or npm config
+npm error gyp ERR! find VS VCINSTALLDIR not set, not running in VS Command Prompt
+npm error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+npm error gyp ERR! find VS
+npm error gyp ERR! find VS Failure details: undefined
+npm error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+npm error gyp ERR! find VS
+npm error gyp ERR! find VS Failure details: undefined
+npm error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+npm error gyp ERR! find VS
+npm error gyp ERR! find VS Failure details: undefined
+npm error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+npm error gyp ERR! find VS
+npm error gyp ERR! find VS Failure details: undefined
+npm error gyp ERR! find VS not looking for VS2015 as it is only supported up to Node.js 18
+npm error gyp ERR! find VS not looking for VS2013 as it is only supported up to Node.js 8
+npm error gyp ERR! find VS
+npm error gyp ERR! find VS **************************************************************
+npm error gyp ERR! find VS You need to install the latest version of Visual Studio
+npm error gyp ERR! find VS including the "Desktop development with C++" workload.
+npm error gyp ERR! find VS For more information consult the documentation at:
+npm error gyp ERR! find VS https://github.com/nodejs/node-gyp#on-windows
+npm error gyp ERR! find VS **************************************************************
+npm error gyp ERR! find VS
+npm error gyp ERR! configure error
+npm error gyp ERR! stack Error: Could not find any Visual Studio installation to use
+npm error gyp ERR! stack at VisualStudioFinder.fail (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-visualstudio.js:116:11)
+npm error gyp ERR! stack at VisualStudioFinder.findVisualStudio (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-visualstudio.js:72:17)
+npm error gyp ERR! stack at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+npm error gyp ERR! stack at async createBuildDir (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:95:26)        
+npm error gyp ERR! stack at async run (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js:81:18)
+npm error gyp ERR! System Windows_NT 10.0.22631
+npm error gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "configure" "--fallback-to-build" "--module=C:\\Users\\kanha\\OneDrive\\Desktop\\codingClub\\server\\node_modules\\bcrypt\\lib\\binding\\napi-v3\\bcrypt_lib.node" "--module_name=bcrypt_lib" "--module_path=C:\\Users\\kanha\\OneDrive\\Desktop\\codingClub\\server\\node_modules\\bcrypt\\lib\\binding\\napi-v3" "--napi_version=9" "--node_abi_napi=napi" "--napi_build_version=3" "--node_napi_label=napi-v3"
+npm error gyp ERR! cwd C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt
+npm error gyp ERR! node -v v20.16.0
+npm error gyp ERR! node-gyp -v v10.1.0
+npm error gyp ERR! not ok
+npm error node-pre-gyp ERR! build error
+npm error node-pre-gyp ERR! stack Error: Failed to execute 'C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js configure --fallback-to-build --module=C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node --module_name=bcrypt_lib --module_path=C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt\lib\binding\napi-v3 --napi_version=9 --node_abi_napi=napi --napi_build_version=3 --node_napi_label=napi-v3' (1)
+npm error node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\@mapbox\node-pre-gyp\lib\util\compile.js:89:23)
+npm error node-pre-gyp ERR! stack     at ChildProcess.emit (node:events:519:28)
+npm error node-pre-gyp ERR! stack     at maybeClose (node:internal/child_process:1105:16)
+npm error node-pre-gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+npm error node-pre-gyp ERR! System Windows_NT 10.0.22631
+npm error node-pre-gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\kanha\\OneDrive\\Desktop\\codingClub\\server\\node_modules\\@mapbox\\node-pre-gyp\\bin\\node-pre-gyp" "install" "--fallback-to-build"
+npm error node-pre-gyp ERR! cwd C:\Users\kanha\OneDrive\Desktop\codingClub\server\node_modules\bcrypt
+npm error node-pre-gyp ERR! node -v v20.16.0
+npm error node-pre-gyp ERR! node-pre-gyp -v v1.0.11
+npm error node-pre-gyp ERR! not ok
+npm error A complete log of this run can be found in: C:\Users\kanha\AppData\Local\npm-cache\_logs\2024-09-27T12_34_48_942Z-debug-0.log
+PS C:\Users\kanha\OneDrive\Desktop\codingClub\server>  npm install -g nodemon
+
+changed 29 packages in 2m
+
+4 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\kanha\OneDrive\Desktop\codingClub\server> 
+
+
+
+
+
+
+PS C:\Users\kanha\OneDrive\Desktop\codingClub>cd client
+PS C:\Users\kanha\OneDrive\Desktop\codingClub\client> npm start
+
+Compiled successfully!
+
+You can now view client in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.56.1:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+
+
+
+
+
+PS C:\Users\kanha\OneDrive\Desktop\codingClub> cd server
+PS C:\Users\kanha\OneDrive\Desktop\codingClub\server>  npm start
+
+> server@1.0.0 start
+> node index.js
+
+Server running at http://localhost:8080
+
+
+-------------------------email--------------------------------------------
+Installing Dependencies
+Make sure to install the required packages in your project directory:
+>>npm install express nodemailer body-parser cors
+
+
+The error you're encountering—Invalid login: 535-5.7.8 Username and Password not accepted—indicates that the credentials you are using to authenticate with Gmail via Nodemailer are not being accepted. Here are some steps to resolve this issue:
+
+1. Use an App-Specific Password
+If you haven't done so already, you need to generate an app-specific password instead of using your Gmail account password. Here’s how:
+
+Go to your Google Account Security page.
+Scroll down to "Signing in to Google" and ensure that 2-Step Verification is enabled.
+Once 2-Step Verification is set up, you’ll see an option for App Passwords. Click on it.
+Select "Mail" as the app and "Other" for the device, then name it (e.g., "Nodemailer").
+Click "Generate" to create the app password.
+Use this 16-character password in your Nodemailer configuration instead of your Gmail password.
+2. Allow Less Secure Apps
+If you don’t want to use app passwords, you may need to allow less secure apps to access your account. However, Google is phasing this feature out, and using app-specific passwords is the recommended approach.
+
+To enable access for less secure apps:
+
+Go to your Google Account settings.
+Scroll to "Less secure app access" and turn it ON.
+3. Double-Check Your Credentials
+Ensure you have the correct email address and password in your Nodemailer configuration:
