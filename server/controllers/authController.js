@@ -8,8 +8,14 @@ const registerStudent = async (req, res) => {
   const { firstName, lastName, email, course, subField, year, rollNumber, gender, password } = req.body;
 
   try {
-    const existingStudent = await Student.findOne({ email });
-    if (existingStudent) return res.status(400).json({ message: 'Student already registered!' });
+    // Check if the email or rollNumber is already registered
+    const existingStudent = await Student.findOne({
+      $or: [{ email }, { rollNumber }]
+    });
+
+    if (existingStudent) {
+      return res.status(400).json({ message: 'Student already registered with this email or roll number!' });
+    }
 
     const userModel = new Student({ firstName, lastName, email, course, subField, year, rollNumber, gender, password });
     userModel.password = await bcrypt.hash(password, 10);
