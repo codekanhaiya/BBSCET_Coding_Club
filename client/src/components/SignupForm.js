@@ -72,7 +72,7 @@ const RegistrationForm = () => {
     if (!formData.course) newErrors.course = 'Course is required.';
     if (formData.course === 'B.Tech' && !formData.subField) newErrors.subField = 'Branch is required.';
     if (!formData.year) newErrors.year = 'Current Study Year is required.';
-    if (!formData.rollNumber || formData.rollNumber.length !== 10) newErrors.rollNumber = 'Roll Number must be 10 digits.';
+    if (!formData.rollNumber || formData.rollNumber.length !== 13) newErrors.rollNumber = 'Roll Number must be 13 digits.';
     if (!formData.gender) newErrors.gender = 'Gender is required.';
     if (!formData.password) {
       newErrors.password = 'Password is required.';
@@ -222,7 +222,7 @@ const RegistrationForm = () => {
               fullWidth
               label="Roll Number"
               name="rollNumber"
-              inputProps={{ maxLength: 10 }}
+              inputProps={{ maxLength: 13 }}
               error={Boolean(errors.rollNumber)}
               helperText={errors.rollNumber}
               value={formData.rollNumber}
